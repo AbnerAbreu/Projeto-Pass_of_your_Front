@@ -7,18 +7,18 @@
         align-items: center;
         justify-content: space-around;
         // background-image: linear-gradient(to bottom, crimson, orange);
-        background-color: rgb(89, 0, 172);
+        background-color: rgb(13, 13, 14);
         text-decoration: none;
         font-weight: 800;
         a{
             text-decoration: none;
             font-family: 'Courier New', Courier, monospace;
-            color:yellow;
+            color:rgb(14, 14, 13);
 
         &:hover{
             text-decoration: none;
             font-family: 'Courier New', Courier, monospace;
-            color: white;
+            color: rgb(246, 4, 4);
 
         }
     }

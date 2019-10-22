@@ -23,24 +23,50 @@ const Cadastrar = () => {
     const handleSubmit = e =>{
         e.preventDefault();
 
-        response = fetch('localhost:8080/doador'. method = 'post')
+        console.log("Opa")
 
-        resposta = {
-            "nome": nome,
-            "email": email,
-            "confirmEmail": confirmEmail,
-            "password" : password
-            
-        }
-
-        if(email === confirmEmail){
-          const paylod = {
-            nome:nome,
-            email: email,
-            confirmEmail : confirmEmail,
-            password: senha
+        fetch('http://localhost:8000/escolas/',
+          {
+            headers: {
+              'Content-Type': 'application/json'
+            }
           }
-          localStorage.setItem(`Dados${count}`, JSON.stringify(paylod));
+        ).then(response => {
+            return response.json()
+        }).then(response => {
+            alert(response)
+        })
+
+      
+        if(email === confirmEmail){
+          const novaEscola = {
+            nome: nome,
+            email: email,
+            telefone: '111111111',
+            endereco: 'asdasdasd',
+            senha: senha
+          }
+          fetch('http://localhost:8000/escolas/',
+            {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringfy(novaEscola)
+            }
+          ).then(response => {
+              return response.json()
+          }).then(response => {
+            if(response.id) {
+              alert("criado com sucesso")
+            }else{
+              alert("Deu ruim")
+            }
+          })
+
+
+
+          localStorage.setItem(`Dados${count}`, JSON.stringfy(novaEscola));
           setCount(count + 1);
           setNome("");
           setEmail("");
@@ -55,7 +81,7 @@ const Cadastrar = () => {
         }
     return (
         <div className="cadastro">
-        <h1>cadastre-se</h1>
+        <h1>Cadastre-se</h1>
         <form onSubmit={handleSubmit}>
     
             <Input 
@@ -78,8 +104,8 @@ const Cadastrar = () => {
     
             <Input 
             type="email" 
-            label="Redigite o email" 
-            placeholder="Confirme o Email"
+            label="Confirme o seu email" 
+            placeholder="Reescreva o Email"
             atualizarState={setConfirmEmail}
             value={confirmEmail}
             />
