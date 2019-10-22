@@ -1,14 +1,28 @@
 import React from 'react';
 
-import './Login.scss';
+import './Escola.scss';
 
-const Login = () => {
+const Escola = () => {
+
+    fetch('http://localhost:8000/escolas/',
+          {
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          }
+        ).then(response => {
+            return response.json()
+        }).then(response => {
+            console.log(response)
+        })
     return (
-        <div className="Login">
+        <div className="Escola">
             <nav>
-                <h1>Login</h1>
+                <h1>Escola</h1>
+                
+        
             </nav>
         </div>
     )
 }
-export default Login;
+export default Escola;
