@@ -8,6 +8,8 @@ const Cadastrar = () => {
     const [nome, setNome] = useState("");
     const [email, setEmail] = useState("");
     const [confirmEmail, setConfirmEmail] = useState("");
+    const [telefone, setTelefone] = useState("");
+    const [endereco, setEndereco] = useState("");
     const [senha, setSenha] = useState("");
     const [count, setCount] = useState(0);
     const [mensagem , setMensagem] = useState("");
@@ -25,25 +27,25 @@ const Cadastrar = () => {
 
         console.log("Opa")
 
-        fetch('http://localhost:8000/escolas/',
-          {
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          }
-        ).then(response => {
-            return response.json()
-        }).then(response => {
-            alert(response)
-        })
+        // fetch('http://localhost:8000/escolas/',
+        //   {
+        //     headers: {
+        //       'Content-Type': 'application/json'
+        //     }
+        //   }
+        // ).then(response => {
+        //     return response.json()
+        // }).then(response => {
+        //     console.log(response)
+        // })
 
       
         if(email === confirmEmail){
           const novaEscola = {
             nome: nome,
             email: email,
-            telefone: '111111111',
-            endereco: 'asdasdasd',
+            telefone: telefone,
+            endereco: endereco,
             senha: senha
           }
           fetch('http://localhost:8000/escolas/',
@@ -52,7 +54,7 @@ const Cadastrar = () => {
               headers: {
                 'Content-Type': 'application/json'
               },
-              body: JSON.stringfy(novaEscola)
+              body: JSON.stringify(novaEscola)
             }
           ).then(response => {
               return response.json()
@@ -66,7 +68,7 @@ const Cadastrar = () => {
 
 
 
-          localStorage.setItem(`Dados${count}`, JSON.stringfy(novaEscola));
+          localStorage.setItem(`Dados${count}`, JSON.stringify(novaEscola));
           setCount(count + 1);
           setNome("");
           setEmail("");
@@ -108,6 +110,22 @@ const Cadastrar = () => {
             placeholder="Reescreva o Email"
             atualizarState={setConfirmEmail}
             value={confirmEmail}
+            />
+
+            <Input 
+            type="Telefone" 
+            label="Telefone" 
+            placeholder="Digite seu Telefone"
+            atualizarState={setTelefone}
+            value={telefone}
+            />
+
+            <Input 
+            type="Endereco" 
+            label="Endereço" 
+            placeholder="Digite seu Endereço"
+            atualizarState={setEndereco}
+            value={endereco}
             />
             
             <Input 

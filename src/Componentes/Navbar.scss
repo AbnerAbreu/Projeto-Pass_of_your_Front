@@ -8,10 +8,11 @@
         justify-content: space-around;
         margin-bottom: -22px;
         // background-image: linear-gradient(to bottom, crimson, orange);
-        background-color: rgb(13, 13, 14);
+        background-color: rgb(184, 10, 10);
         text-decoration: none;
         font-weight: 800;
         a{
+            font-size: 22px;
             text-decoration: none;
             font-family: 'Courier New', Courier, monospace;
             color:red;
@@ -20,7 +21,7 @@
         &:hover{
             text-decoration: none;
             font-family: 'Courier New', Courier, monospace;
-            color: rgb(246, 4, 4);
+            color: rgb(39, 15, 15);
 
         }
     }
