@@ -7,7 +7,9 @@ import Cadastrar from './Componentes/Cadastrar';
 import Home from './Componentes/Home';
 import CadastrarEscola from './Componentes/CadastrarEscola';
 import CadastroDoador from './Componentes/CadastroDoador'
+import Doadores from './Componentes/Doadores';
 import Doacao from './Componentes/Doacao';
+
 
 const App=() => {
   return (
@@ -18,13 +20,12 @@ const App=() => {
       <Route path="/cadastrar" component={Cadastrar} />
       <Route path="/cadastrarescola" component={CadastrarEscola} />
       <Route path="/cadastrardoador" component={CadastroDoador} />
-      <Route path="/doadores" component={Doacao} />
+      <Route path="/doadores" component={Doadores} />
       <Route path="/escolas" component={Escola} />
+      <Route path="/doacoes" component={Doacao} />
+
 
       
-
-     
-
     </div>
     
     </BrowserRouter>

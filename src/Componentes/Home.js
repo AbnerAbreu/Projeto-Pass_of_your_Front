@@ -13,13 +13,15 @@ const Home = ({texto}) => {
     return (
         <div className="Home">
            <header>
-               <h1>O  QUE NÃO É UTIL PARA VOCÊ, <br/>
-                   PODE SER ÚTIL PARA ESCOLAS CARENTES</h1>
+               <div className="titulo">
+                    <h1>O  QUE NÃO É UTIL PARA VOCÊ, <br/>
+                        PODE SER ÚTIL PARA ESCOLAS CARENTES</h1>    
+                </div>
            </header>
-            <div>
-                <h1>Equipe:</h1>
-            </div>
            <section>
+                <div className="equipe">
+                    <h1>Equipe:</h1>
+                </div>
                 <div>
                     <Imagem conteudo={Abner} texto={"Abner Abreu"}/>
                     <Imagem conteudo={samanta} texto={"Samanta Souza"}/>

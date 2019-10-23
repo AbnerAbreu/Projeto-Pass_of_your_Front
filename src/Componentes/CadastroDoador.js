@@ -127,6 +127,10 @@ const Cadastrar = () => {
             <Input type="submit" value="Cadastrar"/>
               
             </form> 
+
+            <h4>Se Quiser cadastrar uma Doacao. Clique abaixo:</h4>
+            <Link to="/doacoes"><Botao text="Cadastrar Doacao"></Botao></Link>
+
           </div>
         )
 }

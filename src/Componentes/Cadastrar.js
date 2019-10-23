@@ -16,6 +16,7 @@ const Cadastrar = () => {
             <h1>Se Quiser se Cadastrar como doador. Clique abaixo:</h1>
             <Link to="/cadastrardoador"><Botao text="Cadastrar Doador"></Botao></Link>
 
+
         </div>
     )
 }
