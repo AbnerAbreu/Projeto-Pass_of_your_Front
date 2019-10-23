@@ -28,3 +28,20 @@ section{
     align-items: center;
     flex-direction: column;
 }
+.flor{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    &:hover{
+        background-color: grey;
+    }
+    img{
+        margin-top: 7px;
+    }
+}       
