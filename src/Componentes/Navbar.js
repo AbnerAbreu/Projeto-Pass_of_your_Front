@@ -22,7 +22,9 @@ const Navbar = () => {
             <Link  to="/cadastrar">Cadastrar </Link>
 
             </div>
-            <Link  to="/login">Escolas</Link>
+            <Link  to="/escolas">Escolas</Link>
+            <Link  to="/doadores">Doadores</Link>
+
             </nav>
         </div>
     )
