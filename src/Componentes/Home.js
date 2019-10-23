@@ -14,7 +14,7 @@ const Home = ({texto}) => {
         <div className="Home">
            <header>
                <h1>O  QUE NÃO É UTIL PARA VOCÊ, <br/>
-                   PODE SER UTIL PARA ESCOLAS CARENTES</h1>
+                   PODE SER ÚTIL PARA ESCOLAS CARENTES</h1>
            </header>
             <div>
                 <h1>Equipe:</h1>
@@ -24,9 +24,9 @@ const Home = ({texto}) => {
                     <Imagem conteudo={Abner} texto={"Abner Abreu"}/>
                     <Imagem conteudo={samanta} texto={"Samanta Souza"}/>
                     <Imagem conteudo={thiago2} texto={"Thiago Mendes"}/>
-                    <Imagem conteudo={roger} texto={"Roger"}/>
+                    <Imagem conteudo={roger} texto={"Roger Campos"}/>
                     <Imagem conteudo={larissa} texto={"Larissa"}/>
-                    <Imagem conteudo={beatriz} texto={"Batriz pavan "}/>
+                    <Imagem conteudo={beatriz} texto={"Beatriz Pavan "}/>
                 </div>
 
            </section>

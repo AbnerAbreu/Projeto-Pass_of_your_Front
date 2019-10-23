@@ -98,7 +98,7 @@ const Cadastrar = () => {
             <Input 
             type="email" 
             label="Email" 
-            placeholder="digite o Email"
+            placeholder="Digite o Email"
             atualizarState={setEmail}
             value={email}
             />
@@ -131,7 +131,7 @@ const Cadastrar = () => {
             <Input 
             type="password" 
             label="Senha" 
-            placeholder="digite a senha"
+            placeholder="Digite a senha"
             atualizarState={setSenha}
             value={senha}
             obrigatorio
