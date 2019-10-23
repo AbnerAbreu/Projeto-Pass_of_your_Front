@@ -24,7 +24,7 @@ const Home = ({texto}) => {
                 <Imagem conteudo={thiago2} texto={"Thiago Mendes"}/>
                 <Imagem conteudo={roger} texto={"Roger"}/>
                 <Imagem conteudo={larissa} texto={"Larissa"}/>
-                <Imagem conteudo={beatriz} texto={"Batriz pavan "}/>
+                <Imagem conteudo={beatriz} texto={"Beatriz Pavan "}/>
             </div>
 
            </section>
