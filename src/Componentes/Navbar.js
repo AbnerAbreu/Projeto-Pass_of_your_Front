@@ -1,10 +1,21 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import {Link} from 'react-router-dom'
 import Imagem from '../Componentes/Imagem';
 import carnation from './imagem/carnation.png';
 import './Navbar.scss';
 
 const Navbar = () => {
+    const [menuAtivo, setMenuAtivo] = useState(false);
+
+    const abrirMenu = () => {
+      setMenuAtivo(!menuAtivo);
+    };
+    const fecharMenu = () =>{
+      setMenuAtivo(false)
+    }
+
+
+
     return (
         <div className="Navbar">
             <nav>
@@ -12,8 +23,15 @@ const Navbar = () => {
                 <Imagem conteudo={carnation} />
                 </div>
             <Link  to="/">Home</Link>
-            <Link  to="/cadastrar">Cadastrar</Link>
-            <Link  to="/login">Escolas</Link>
+            <div onClick={abrirMenu} id="menucad">
+            <Link  to="/cadastrar">Cadastrar </Link>
+
+            </div>
+            <Link  to="/escolas">Escolas</Link>
+            <Link  to="/doadores">Doadores</Link>
+       
+
+
             </nav>
         </div>
     )

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Cadastrar.scss';
-import Botao from '../Componentes/Botao';
-import Input from '../Componentes/Input';
+import Botao from './Botao';
+import Input from './Input';
 import {Link} from 'react-router-dom'
 
 const Cadastrar = () => {
@@ -25,8 +25,21 @@ const Cadastrar = () => {
     const handleSubmit = e =>{
         e.preventDefault();
 
-        console.log("Salvo com sucesso")
+        console.log("Opa")
 
+        // fetch('http://localhost:8000/escolas/',
+        //   {
+        //     headers: {
+        //       'Content-Type': 'application/json'
+        //     }
+        //   }
+        // ).then(response => {
+        //     return response.json()
+        // }).then(response => {
+        //     console.log(response)
+        // })
+
+      
         if(email === confirmEmail){
           const novaEscola = {
             nome: nome,
@@ -35,7 +48,7 @@ const Cadastrar = () => {
             endereco: endereco,
             senha: senha
           }
-          fetch('http://localhost:8000/doadores/',
+          fetch('http://localhost:8000/escolas/',
             {
               method: 'POST',
               headers: {
@@ -47,7 +60,7 @@ const Cadastrar = () => {
               return response.json()
           }).then(response => {
             if(response.id) {
-              alert("Doador cadastrado com sucesso")
+              alert("criado com sucesso")
             }else{
               alert("Deu ruim")
             }
@@ -85,7 +98,7 @@ const Cadastrar = () => {
             <Input 
             type="email" 
             label="Email" 
-            placeholder="digite o Email"
+            placeholder="Digite o Email"
             atualizarState={setEmail}
             value={email}
             />
@@ -118,7 +131,7 @@ const Cadastrar = () => {
             <Input 
             type="password" 
             label="Senha" 
-            placeholder="digite a senha"
+            placeholder="Digite a senha"
             atualizarState={setSenha}
             value={senha}
             obrigatorio
@@ -127,10 +140,6 @@ const Cadastrar = () => {
             <Input type="submit" value="Cadastrar"/>
               
             </form> 
-
-            <h4>Se Quiser cadastrar uma Doacao. Clique abaixo:</h4>
-            <Link to="/doacoes"><Botao text="Cadastrar Doacao"></Botao></Link>
-
           </div>
         )
 }
