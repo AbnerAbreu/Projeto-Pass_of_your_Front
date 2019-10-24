@@ -1,15 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './Cadastrar.scss';
-import Botao from './Botao';
 import Input from './Input';
-import {Link} from 'react-router-dom'
 
 const Cadastrar = () => {
     const [nome, setNome] = useState("");
     const [descricao, setdescricao] = useState("");
     const [quantidade, setquantidade  ] = useState("");
-    const [count, setCount] = useState(0);
-    const [mensagem , setMensagem] = useState("");
+    //const [count, setCount] = useState(0);
+    const [setMensagem] = useState("");
 
 
     const resposta = (texto) =>{

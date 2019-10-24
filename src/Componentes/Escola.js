@@ -1,4 +1,6 @@
 import React from 'react';
+import Imagem from '../Componentes/Imagem';
+import fundoEscola from './imagem/fundoEscola.jpg';
 
 import './Escola.scss';
 
@@ -25,14 +27,17 @@ const Escola = () => {
     return (
         <div className="Escola">
             <nav>
-                <h1>Escola</h1>
+            <div className="fundo">
+                <h1>Lista de Escolas</h1>
                 
                 {escolas.map((escola) => {
                     return <div>
-                        <h1>{escola.nome}</h1>
-                        <h4>{escola.email}</h4>
+                    <li className="titulo">{escola.nome}</li> 
+                       
+                        
                     </div>
                 })}
+            </div>
             </nav>
         </div>
     )

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './Cadastrar.scss';
 import Botao from '../Componentes/Botao';
 import Input from '../Componentes/Input';
@@ -12,7 +12,7 @@ const Cadastrar = () => {
     const [endereco, setEndereco] = useState("");
     const [senha, setSenha] = useState("");
     const [count, setCount] = useState(0);
-    const [mensagem , setMensagem] = useState("");
+    const [setMensagem] = useState("");
 
 
     const resposta = (texto) =>{

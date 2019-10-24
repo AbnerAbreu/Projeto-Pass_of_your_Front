@@ -1,3 +1,24 @@
 .Escola h1 {
     color: black;
+    font-size:40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+ .titulo{
+    font-size: 30px;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    &:hover{
+        color:red;
+        cursor: pointer;
+    }
+
+}
+.fundo{
+    background-image: url('./imagem/abandono-escolar-jovens.jpg');
+    background-size: cover;
+    height: 100vh;
 }
