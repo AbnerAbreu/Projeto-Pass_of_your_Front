@@ -60,7 +60,7 @@ const Cadastrar = () => {
               return response.json()
           }).then(response => {
             if(response.id) {
-              alert("criado com sucesso")
+              window.location='http://localhost:3000/doacoes'
             }else{
               alert("Deu ruim")
             }
@@ -141,7 +141,6 @@ const Cadastrar = () => {
               
             </form> 
 
-           <Link to="/doacoes"> <Botao text="Receber Doações"></Botao></Link>
           </div>
         )
 }

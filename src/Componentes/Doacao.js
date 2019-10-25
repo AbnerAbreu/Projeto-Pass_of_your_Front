@@ -26,11 +26,11 @@ const Doacao = ({ linkImg, conteudo, valor , nome, id }) => {
         }
     }
 
-    useEffect(()=>{
-        const total = (valorNovo * quantidade);
-        return setValorTotal((total.toFixed(2)).replace(".", ","));
+    // useEffect(()=>{
+    //     const total = (valorNovo * quantidade);
+    //     return setValorTotal((total.toFixed(2)).replace(".", ","));
         
-    }, [incrementar, decrementar])
+    // }, [incrementar, decrementar])
 
     const handleSubmit = e => {
         e.preventDefault();
