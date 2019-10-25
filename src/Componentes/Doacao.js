@@ -8,7 +8,7 @@ import Botaozinho from './Botaozinho';
 
 const Doacao = ({ linkImg, conteudo, valor , nome, id }) => {
     const valorNovo = Number(valor);
-    const [quantidade, setQuantidade] = useState(0);
+    const [quantidade, setQuantidade] = useState(1);
     const [valorTotal, setValorTotal ] = useState(1);
 
     
@@ -52,7 +52,7 @@ const Doacao = ({ linkImg, conteudo, valor , nome, id }) => {
           </div>
 
           
-            <Botao text="Receber"/>
+           <Link to="/receber"> <Botao text="Receber"/> </Link>
 
 
 

@@ -10,6 +10,7 @@ import CadastroDoador from './Componentes/CadastroDoador'
 import Doadores from './Componentes/Doadores';
 import CadastrarDoacao from './Componentes/CadastrarDoacao';
 import Doacoes from './Componentes/Doacoes';
+import Receber from './Componentes/Receber';
 //import Doacao from './Componentes/Doacao';
 
 
@@ -27,6 +28,7 @@ const App=() => {
       <Route path="/escolas" component={Escola} />
       <Route path="/cadastrardoacoes" component={CadastrarDoacao} />
       <Route path="/doacoes" component={Doacoes} />
+      <Route path="/receber" component={Receber}/>
 
       
 
