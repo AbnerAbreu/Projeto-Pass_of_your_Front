@@ -1,5 +1,17 @@
+.Doadores {
+    margin: 0;
+    .doacao{
+        margin: 0;
+        width: 1276px;
+        height: 100%;
+        background-image: url('./imagem/doarImagem.jpg');
+        background-size: cover;
+    }
+    
+}
+
 .Doadores h1 {
-    margin: 20px;
+    // margin: 20px;
     color: white;
     display: flex;
     align-items: center;
@@ -13,11 +25,7 @@
     color:black;
     
 }
-.doacao{
-    height: 100vh;
-    background-image: url('./imagem/doarImagem.jpg');
-    background-size: cover;
-}
+
 .transparencia{
     background-color: rgba(0, 0, 0, 0.123);
     height: 100vh;
