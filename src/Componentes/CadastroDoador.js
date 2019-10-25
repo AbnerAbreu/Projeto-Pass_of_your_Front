@@ -48,7 +48,8 @@ const Cadastrar = () => {
               return response.json()
           }).then(response => {
             if(response.id) {
-              alert("Doador cadastrado com sucesso")
+
+              window.location="http://localhost:3000/cadastrardoacoes"
             }else{
               alert("Deu ruim")
             }
@@ -100,6 +101,7 @@ const Cadastrar = () => {
             placeholder="digite o Email"
             atualizarState={setEmail}
             value={email}
+            obrigatorio
             />
     
     
@@ -109,6 +111,7 @@ const Cadastrar = () => {
             placeholder="Reescreva o Email"
             atualizarState={setConfirmEmail}
             value={confirmEmail}
+            obrigatorio
             />
 
             <Input 
@@ -117,6 +120,7 @@ const Cadastrar = () => {
             placeholder="Digite seu Telefone"
             atualizarState={setTelefone}
             value={telefone}
+            obrigatorio
             />
 
             <Input 
@@ -125,6 +129,7 @@ const Cadastrar = () => {
             placeholder="Digite seu Endereço"
             atualizarState={setEndereco}
             value={endereco}
+            obrigatorio
             />
             
             <Input 
@@ -140,8 +145,8 @@ const Cadastrar = () => {
               
             </form> 
 
-            <h4>Se Quiser cadastrar uma Doacao. Clique abaixo:</h4>
-            <Link to="/cadastrardoacoes"><Botao text="Cadastrar Doacao"></Botao></Link>
+            {/* <h4>Se Quiser cadastrar uma Doacao. Clique abaixo:</h4>
+            <Link to="/cadastrardoacoes"><Botao text="Cadastrar Doacao"></Botao></Link> */}
 
           </div>
         )
