@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import './Escola.scss';
 
 const Escola = () => {
@@ -24,17 +25,30 @@ const Escola = () => {
     }
     return (
         <div className="Escola">
+                <div className="texto">
+
             <nav>
-                <h1>Escola</h1>
+            <div className="fundo">
+                <div className="teste">
+
+                <h1>Lista de Escolas</h1>
                 
                 {escolas.map((escola) => {
                     return <div>
-                        <h1>{escola.nome}</h1>
-                        <h4>{escola.email}</h4>
+                    <li className="titulo">{escola.nome}</li> 
+                       
+                        
                     </div>
                 })}
+                </div>
+            </div>
             </nav>
+                </div>
+            <footer>
+                <p> Suporte: mastertech@gmail.com </p>
+        </footer>
         </div>
+
     )
 }
 export default Escola;

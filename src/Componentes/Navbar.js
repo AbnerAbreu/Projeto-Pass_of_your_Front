@@ -10,9 +10,9 @@ const Navbar = () => {
     const abrirMenu = () => {
       setMenuAtivo(!menuAtivo);
     };
-    const fecharMenu = () =>{
-      setMenuAtivo(false)
-    }
+    // const fecharMenu = () =>{
+    //   setMenuAtivo(false)
+    // }
 
     const makeMagic = () => {
       for (let el of document.getElementsByTagName("body")) {

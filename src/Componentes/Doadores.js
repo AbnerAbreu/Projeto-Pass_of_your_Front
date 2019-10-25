@@ -24,16 +24,22 @@ const Doadores = () => {
     }
     return (
         <div className="Doadores">
-            <nav>
+            <div className="doacao">
+                <div className="transparencia">
+
+            
                 <h1>Doadores</h1>
                 
                 {doadores.map((doadores) => {
                     return <div>
-                        <h1>{doadores.nome}</h1>
-                        <h4>{doadores.email}</h4>
+                        <li className="titulo">{doadores.nome}</li>
                     </div>
                 })}
-            </nav>
+                </div>
+                </div>
+                <footer>
+                    <p> Suporte: mastertech@gmail.com </p>
+                </footer>
         </div>
     )
 }

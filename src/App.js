@@ -10,7 +10,7 @@ import CadastroDoador from './Componentes/CadastroDoador'
 import Doadores from './Componentes/Doadores';
 import CadastrarDoacao from './Componentes/CadastrarDoacao';
 import Doacoes from './Componentes/Doacoes';
-import Doacao from './Componentes/Doacao';
+//import Doacao from './Componentes/Doacao';
 
 
 

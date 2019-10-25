@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './Cadastrar.scss';
 import Botao from '../Componentes/Botao';
 import Input from '../Componentes/Input';
@@ -13,7 +13,7 @@ const Cadastrar = () => {
     const [idade, setIdade] = useState(18);
     const [senha, setSenha] = useState("");
     const [count, setCount] = useState(0);
-    const [mensagem , setMensagem] = useState("");
+    const [setMensagem] = useState("");
 
 
     const resposta = (texto) =>{
@@ -72,6 +72,8 @@ const Cadastrar = () => {
         }
     return (
         <div className="cadastro">
+          <div className="formulario">
+
         <h1>Cadastre-se</h1>
         <form onSubmit={handleSubmit}>
     
@@ -144,6 +146,7 @@ const Cadastrar = () => {
             <Input type="submit" value="Cadastrar"/>
               
             </form> 
+            </div>
 
             {/* <h4>Se Quiser cadastrar uma Doacao. Clique abaixo:</h4>
             <Link to="/cadastrardoacoes"><Botao text="Cadastrar Doacao"></Botao></Link> */}
