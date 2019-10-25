@@ -10,6 +10,7 @@ const Cadastrar = () => {
     const [confirmEmail, setConfirmEmail] = useState("");
     const [telefone, setTelefone] = useState("");
     const [endereco, setEndereco] = useState("");
+    const [idade, setIdade] = useState(18);
     const [senha, setSenha] = useState("");
     const [count, setCount] = useState(0);
     const [mensagem , setMensagem] = useState("");
@@ -81,6 +82,17 @@ const Cadastrar = () => {
             value={nome}
             obrigatorio
             />
+
+            <Input 
+            type="number" 
+            label="Idade" 
+            min="18"
+            placeholder="Digite sua idade"
+            atualizarState={setIdade}
+            value={idade}
+            obrigatorio
+            />
+
             
             <Input 
             type="email" 
@@ -123,13 +135,13 @@ const Cadastrar = () => {
             value={senha}
             obrigatorio
             />
-    
+          
             <Input type="submit" value="Cadastrar"/>
               
             </form> 
 
             <h4>Se Quiser cadastrar uma Doacao. Clique abaixo:</h4>
-            <Link to="/doacoes"><Botao text="Cadastrar Doacao"></Botao></Link>
+            <Link to="/cadastrardoacoes"><Botao text="Cadastrar Doacao"></Botao></Link>
 
           </div>
         )
