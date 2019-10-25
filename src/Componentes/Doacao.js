@@ -26,17 +26,17 @@ const Doacao = ({ linkImg, conteudo, valor , nome, id }) => {
         }
     }
 
-    useEffect(()=>{
-        const total = (valorNovo * quantidade);
-        return setValorTotal((total.toFixed(2)).replace(".", ","));
+    // useEffect(()=>{
+    //     const total = (valorNovo * quantidade);
+    //     return setValorTotal((total.toFixed(2)).replace(".", ","));
         
-    }, [incrementar, decrementar])
+    // }, [incrementar, decrementar])
 
-    const handleSubmit = e => {
-        e.preventDefault();
-        localStorage.setItem(`Valor Total${id}`, valorTotal);
+    // const handleSubmit = e => {
+    //     e.preventDefault();
+    //     localStorage.setItem(`Valor Total${id}`, valorTotal);
 
-    }
+    // }
 
     return (
       <div className="doacao">
@@ -52,7 +52,7 @@ const Doacao = ({ linkImg, conteudo, valor , nome, id }) => {
           </div>
 
           
-            <Botao funcao={handleSubmit} text="Receber"/>
+            <Botao text="Receber"/>
 
 
 

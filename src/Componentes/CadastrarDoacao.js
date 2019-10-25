@@ -95,6 +95,7 @@ const Cadastrar = () => {
             <Input 
             type="number" 
             label="Quantidade" 
+            min="1"
             placeholder="quantidade"
             atualizarState={setquantidade}
             value={quantidade}
