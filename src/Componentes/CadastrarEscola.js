@@ -101,6 +101,7 @@ const Cadastrar = () => {
             placeholder="Digite o Email"
             atualizarState={setEmail}
             value={email}
+            obrigatorio
             />
     
     
@@ -110,6 +111,7 @@ const Cadastrar = () => {
             placeholder="Reescreva o Email"
             atualizarState={setConfirmEmail}
             value={confirmEmail}
+            obrigatorio
             />
 
             <Input 
@@ -118,6 +120,7 @@ const Cadastrar = () => {
             placeholder="Digite seu Telefone"
             atualizarState={setTelefone}
             value={telefone}
+            obrigatorio
             />
 
             <Input 
@@ -126,6 +129,7 @@ const Cadastrar = () => {
             placeholder="Digite seu Endereço"
             atualizarState={setEndereco}
             value={endereco}
+            obrigatorio
             />
             
             <Input 
