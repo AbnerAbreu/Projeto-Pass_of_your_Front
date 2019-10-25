@@ -140,6 +140,8 @@ const Cadastrar = () => {
             <Input type="submit" value="Cadastrar"/>
               
             </form> 
+
+           <Link to="/doacoes"> <Botao text="Receber Doações"></Botao></Link>
           </div>
         )
 }

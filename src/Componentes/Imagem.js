@@ -3,9 +3,9 @@ import './Imagem.scss';
 
 
 
-const Imagem = ({conteudo, texto}) => {
+const Imagem = ({onClick, conteudo, texto}) => {
     return (
-        <div className="Imagem">
+        <div onClick={onClick} className="Imagem">
 
             <img src={conteudo} alt="" />
             <h3>{texto}</h3>

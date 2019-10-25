@@ -1,0 +1,24 @@
+.Doacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        color:black;
+        margin-top: 45px;
+        margin-bottom: 15px;
+        font-size: 2.5em;
+
+    }
+
+}
+.dote{
+    margin: 20px;
+}
+
+.lista-doacoes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

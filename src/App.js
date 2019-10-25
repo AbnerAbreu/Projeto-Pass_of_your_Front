@@ -8,7 +8,10 @@ import Home from './Componentes/Home';
 import CadastrarEscola from './Componentes/CadastrarEscola';
 import CadastroDoador from './Componentes/CadastroDoador'
 import Doadores from './Componentes/Doadores';
+import CadastrarDoacao from './Componentes/CadastrarDoacao';
+import Doacoes from './Componentes/Doacoes';
 import Doacao from './Componentes/Doacao';
+
 
 
 const App=() => {
@@ -22,7 +25,10 @@ const App=() => {
       <Route path="/cadastrardoador" component={CadastroDoador} />
       <Route path="/doadores" component={Doadores} />
       <Route path="/escolas" component={Escola} />
-      <Route path="/doacoes" component={Doacao} />
+      <Route path="/cadastrardoacoes" component={CadastrarDoacao} />
+      <Route path="/doacoes" component={Doacoes} />
+
+      
 
 
       
