@@ -72,6 +72,8 @@ const Cadastrar = () => {
         }
     return (
         <div className="cadastro">
+          <div className="formulario">
+
         <h1>Cadastre-se</h1>
         <form onSubmit={handleSubmit}>
     
@@ -144,6 +146,7 @@ const Cadastrar = () => {
             <Input type="submit" value="Cadastrar"/>
               
             </form> 
+            </div>
 
             {/* <h4>Se Quiser cadastrar uma Doacao. Clique abaixo:</h4>
             <Link to="/cadastrardoacoes"><Botao text="Cadastrar Doacao"></Botao></Link> */}

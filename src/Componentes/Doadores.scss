@@ -1,5 +1,6 @@
 .Doadores h1 {
-    color: black;
+    margin: 20px;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,4 +12,28 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:black;
     
+}
+.doacao{
+    height: 100vh;
+    background-image: url('./imagem/doarImagem.jpg');
+    background-size: cover;
+}
+.transparencia{
+    background-color: rgba(0, 0, 0, 0.123);
+    height: 100vh;
+    width: 100%;
+}
+footer{
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p{
+        font-size: 20px;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
 }

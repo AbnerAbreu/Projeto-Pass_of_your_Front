@@ -1,6 +1,5 @@
 import React from 'react';
-import Imagem from '../Componentes/Imagem';
-import fundoEscola from './imagem/fundoEscola.jpg';
+
 
 import './Escola.scss';
 
@@ -26,8 +25,12 @@ const Escola = () => {
     }
     return (
         <div className="Escola">
+                <div className="texto">
+
             <nav>
             <div className="fundo">
+                <div className="teste">
+
                 <h1>Lista de Escolas</h1>
                 
                 {escolas.map((escola) => {
@@ -37,9 +40,15 @@ const Escola = () => {
                         
                     </div>
                 })}
+                </div>
             </div>
             </nav>
+                </div>
+            <footer>
+                <p> Suporte: mastertech@gmail.com </p>
+        </footer>
         </div>
+
     )
 }
 export default Escola;
