@@ -3,6 +3,7 @@ import './Cadastrar.scss';
 import Botao from './Botao';
 import Input from './Input';
 import {Link} from 'react-router-dom';
+import { API_URL } from '../api';
 
 
 
@@ -33,7 +34,7 @@ const Cadastrar = () => {
             linkImg: img,
           }
 
-          fetch('http://localhost:8000/doacoes/',
+          fetch( API_URL + 'doacoes/',
             {
               method: 'POST',
               headers: {

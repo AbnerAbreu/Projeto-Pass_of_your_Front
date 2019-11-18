@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { API_URL } from '../api';
 import './Doadores.scss';
 
 const Doadores = () => {
@@ -10,7 +10,7 @@ const Doadores = () => {
     }, []);
 
     const carregarDoadores = () => {
-        fetch('http://localhost:8000/doadores/',
+        fetch(API_URL + 'doadores/',
           {
             headers: {
               'Content-Type': 'application/json'

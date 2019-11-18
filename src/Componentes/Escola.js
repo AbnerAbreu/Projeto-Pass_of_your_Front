@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import { API_URL } from '../api';
 import './Escola.scss';
 
 const Escola = () => {
@@ -11,7 +10,7 @@ const Escola = () => {
     }, []);
 
     const carregarEscolas = () => {
-        fetch('http://localhost:8000/escolas/',
+        fetch(API_URL + 'escolas/',
           {
             headers: {
               'Content-Type': 'application/json'

@@ -3,6 +3,7 @@ import './Cadastrar.scss';
 import Botao from '../Componentes/Botao';
 import Input from '../Componentes/Input';
 import {Link} from 'react-router-dom'
+import { API_URL } from '../api';
 
 const Cadastrar = () => {
     const [nome, setNome] = useState("");
@@ -36,7 +37,7 @@ const Cadastrar = () => {
             endereco: endereco,
             senha: senha
           }
-          fetch('http://localhost:8000/doadores/',
+          fetch(API_URL + 'doadores/',
             {
               method: 'POST',
               headers: {
@@ -49,7 +50,7 @@ const Cadastrar = () => {
           }).then(response => {
             if(response.id) {
 
-              window.location="http://localhost:3000/cadastrardoacoes"
+              window.location="https://prafrente.herokuapp.com/cadastrardoacoes"
             }else{
               alert("Deu ruim")
             }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Cadastrar.scss';
+import { API_URL } from '../api';
 
 import Input from './Input';
 
@@ -48,7 +49,7 @@ const Cadastrar = () => {
             endereco: endereco,
             senha: senha
           }
-          fetch('http://localhost:8000/escolas/',
+          fetch(API_URL + 'escolas/',
             {
               method: 'POST',
               headers: {
@@ -60,7 +61,7 @@ const Cadastrar = () => {
               return response.json()
           }).then(response => {
             if(response.id) {
-              window.location='http://localhost:3000/doacoes'
+              window.location='https://prafrente.herokuapp.com/doacoes'
             }else{
               alert("Deu ruim")
             }
